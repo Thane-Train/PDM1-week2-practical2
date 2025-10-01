@@ -1,12 +1,22 @@
+let circleX;
+let circleY;
+let circleWidth;
+
 function setup() {
     createCanvas(400, 400);
+    background(0);
     noStroke();
     fill(255, 0, 150);
 }
 
 function draw() {
-    background(0);
+    circleX = random(401);
+    circleY = random(401);
+    circleWidth = random (10, 100);
     if (mouseIsPressed) {
-        circle(width / 2, height / 2, width * 0.8);
+        circle(circleX, circleY, circleWidth);
+    }
+    if (keyIsPressed) {
+        background(0);
     }
 }
