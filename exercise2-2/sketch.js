@@ -11,20 +11,20 @@ function draw() {
     rectMode(CENTER);
     stroke(255);
     square(sX, sY, 50)
-    if (mouseX > 25) {
+    if (mouseX > 24) {
         sX = mouseX
     } else {
-        sX = 25
+        sX = 24
     }
-    if (mouseX > width - 25) {
-        sX = width - 25
+    if (mouseX > width - 24) {
+        sX = width - 24
     }
-    if (mouseY > 25) {
+    if (mouseY > 24) {
         sY = mouseY
     } else {
-        sY = 25
+        sY = 24
     }
-    if (mouseY > height - 25) {
-        sY = height - 25
+    if (mouseY > height - 24) {
+        sY = height - 24
     }
 }
