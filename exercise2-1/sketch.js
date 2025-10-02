@@ -1,6 +1,9 @@
-let r = 0;
-let g = 255;
-let b = 0;
+let r;
+let g;
+let b;
+let r1;
+let g1;
+let b1;
 
 
 
@@ -10,18 +13,23 @@ function setup () {
 }
 
 function draw() {
-    background(150, 0, 200);
+    background(r1, g1, b1);
     fill (r, g, b);
     circle(300, 300, 400);
     if (mouseIsPressed) {
-        background(0, 255, 0);
         r = 150;
         g = 0;
         b = 200;
+        r1 = 0;
+        g1 = 255;
+        b1 = 0;
     } else {
         r = 0;
         g = 255;
         b = 0;
+        r1 = 150;
+        g1 = 0;
+        b1 = 200;
     }
 
 }
