@@ -1,30 +1,13 @@
-let sX;
-let sY;
-
 function setup () {
     createCanvas(400, 400);
 }
 
 function draw() {
+    let x = constrain(mouseX, 25, 375);
+    let y = constrain(mouseY, 25, 375);
     background(100);
     fill(0);
     rectMode(CENTER);
     stroke(255);
-    square(sX, sY, 50)
-    if (mouseX > 24) {
-        sX = mouseX
-    } else {
-        sX = 24
-    }
-    if (mouseX > width - 24) {
-        sX = width - 24
-    }
-    if (mouseY > 24) {
-        sY = mouseY
-    } else {
-        sY = 24
-    }
-    if (mouseY > height - 24) {
-        sY = height - 24
-    }
+    square(x, y, 50)
 }
