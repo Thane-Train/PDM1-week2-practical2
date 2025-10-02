@@ -1,5 +1,5 @@
 let x = 0;
-let moveAmount = 1;
+let moveAmount;
 
 function setup() {
     createCanvas(600, 600);
